@@ -13,15 +13,15 @@ import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
-store.subscribe(()=>{
-    const state= store.getState();
-    const visibleExpenses=selectExpenses(state.expenses,state.filters);
-    console.log(visibleExpenses);
-});
+// store.subscribe(()=>{
+//     const state= store.getState();
+//     const visibleExpenses=selectExpenses(state.expenses,state.filters);
+//     console.log(visibleExpenses);
+// });
 
-store.dispatch(addExpense({description:"water bill",amount:400,createdAt:-2000}));
-store.dispatch(addExpense({description:"gas bill",amount:200,createdAt:-3000}));
-store.dispatch(addExpense({description:"gas bill",amount:300,createdAt:5000}));
+// store.dispatch(addExpense({description:"water bill",amount:400,createdAt:-2000}));
+// store.dispatch(addExpense({description:"gas bill",amount:200,createdAt:-3000}));
+// store.dispatch(addExpense({description:"gas bill",amount:300,createdAt:5000}));
 // store.dispatch(setTextFilter("water"));
 //  setTimeout( 
 //    ()=> store.dispatch(setTextFilter("bill")),3000);
