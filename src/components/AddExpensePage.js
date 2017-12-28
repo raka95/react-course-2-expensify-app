@@ -17,7 +17,6 @@
 // );
 // export default connect()(AddExpensePage) ;
 
-//
 import React from 'react';
 import ExpenseForm from './ExpenseForm';
 import {connect} from 'react-redux';
@@ -39,7 +38,7 @@ export class AddExpensePage extends React.Component{
     };
 }
 
-const mapDispatchToProps=(dispatch)=>{
+const mapDispatchToProps=(dispatch)=>({
     addExpense:(expense)=>dispatch(addExpense(expense))
-};
+});
 export default connect(undefined,mapDispatchToProps)(AddExpensePage) ;
