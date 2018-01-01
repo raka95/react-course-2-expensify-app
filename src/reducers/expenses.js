@@ -19,7 +19,9 @@ export default (state=expensesReducerDefault,action)=>{
                         ...action.update
                     };
                     return val;
-            })
+            });
+        case "SET-EXPENSES":
+            return action.expenses;
         default:
             return state;
     }
