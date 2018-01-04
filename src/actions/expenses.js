@@ -53,6 +53,8 @@ export const startAddExpense=(expenseData={})=>{
 
 //Remove-Expense
 
+
+
 export const removeExpense=({id})=>(
     {
         type:"Remove-Expense",
@@ -67,6 +69,24 @@ export const startRemoveExpense=({id}={})=>{
         });
     }
 }
+
+
+
+//می تونیم به این صورت هم  بینویسیم و همه تغییرات فقط همین جاست :
+// export const startRemoveExpense=({id}={})=>{
+//     return (dispatch)=>{
+//             return database.ref(`Expenses/${id}`).remove().then(()=>{
+//             dispatch(  {
+//                 type:"Remove-Expense",
+//                 id
+//             });
+//         });
+//     }
+// }
+
+
+
+
 //Edit-Expense
 
 export const editExpense=(id,update)=>({
