@@ -1,0 +1,22 @@
+//input{از آنجایی که این کلاس بر روی ترد پارتی لایب. المان ها تاثیر می گذارد نمی توان از آن استفاده کرد
+//     border:1px solid #cacccd;
+//     height:50px;
+//     font-weight: 300;
+//     font-size:$font-size-large;
+//     padding:$s-size;
+// }
+.text-input{
+    border:1px solid #cacccd;
+    height:50px;
+    font-weight: 300;
+    font-size:$font-size-large;
+    padding:$s-size;
+}
+.select{
+    @extend .text-input;
+
+}
+.textarea{
+    @extend .text-input;
+    height: 10rem;
+}

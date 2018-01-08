@@ -1,0 +1,21 @@
+.button{
+    // background-color: lighten(blue,20%);
+    background-color: $blue;    
+    color:white;
+    border:none;
+    padding:$s-size;
+    //موارد اول تا سوم از زیر برای لینک ها ست شده تا از مارجین و پدینگ  پشتیبانی کنند و خط زیر متن حذف شود
+    display: inline-block;
+    text-decoration:none;
+    line-height: 1;
+    //
+    font-weight: 300;
+    // font-size: 17px
+    font-size:$font-size-large;
+}
+.button--link{
+    background: none;
+}
+.button--secondary{
+    background-color: #888888;
+}

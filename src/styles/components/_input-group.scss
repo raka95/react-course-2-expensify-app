@@ -1,0 +1,17 @@
+.input-group{
+    // display:flex;باعث می شه افقی شن همه ی دیو ها
+    display:flex;
+    flex-direction:column;
+    // justify-content: space-between;روی المان ها کار می کند نه دیو های تو در تو 
+    margin-bottom:$l-size;
+    // align-content: space-between; برای حالت عمودی دیو ها کاربرد دارد
+    @media(min-width:$desktop-breakpoint){
+        flex-direction: row;
+    }
+}
+.input-group__item{
+    margin-bottom: $s-size;
+    @media(min-width:$desktop-breakpoint){
+        margin:0 $s-size 0 0;    
+    }
+}
